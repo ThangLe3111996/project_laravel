@@ -1,0 +1,139 @@
+@import "common";
+#checkout {
+    text-transform: uppercase;
+    color: $color-text;
+    section {
+        padding: 50px 0;
+        .title {
+            color: $color-dark;
+            font-size: $text-large;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .register {
+            input {
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                &:focus {
+                    border: 2px solid $color-primary;
+                    color: $color-primary;
+                }
+            }
+            form {
+                div {
+                    margin: 15px 0;
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+                button {
+                    text-transform: uppercase;
+                    border:1px solid $color-dark-gray;
+                    color: $color-dark-gray;
+                    padding: 10px 20px;
+                    font-size: $text-medium;
+                    background-color: $color-white;
+                    letter-spacing: 5px;
+                    outline: none;
+                    &:hover {
+                        color: $color-white;
+                        border-color: $color-primary;
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+        .btn-end {
+            .btn-checkout {
+                outline: none;
+                border: none;
+                font-size: $text-medium;
+                padding: 5px 20px;
+                border-radius: 10px;
+                background-color: $color-dark-gray;
+                a {
+                    text-decoration: none;
+                    color: $color-white;
+                }
+                i {
+                    color: $color-white;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+
+#list-cart {
+    .table-cart {
+        width: 100%;
+        border: 1px solid $color-dark-gray;
+        tr {
+            padding: 50px 0;
+            td {
+                border-collapse: collapse;
+                color: $color-dark;
+                text-align: center;
+                font-size: $text-medium;
+                padding: 10px 0;
+                text-transform: capitalize;
+                width: 20%;
+                .wrap-img {
+                    width: 50%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                input {
+                    width: 15%;
+                    text-align: center;
+                }
+            }
+            .text-title {
+                font-size: 25px;
+                font-weight: 600;
+                border-bottom: 1px solid $color-dark-gray;
+            }
+            .text-price {
+                color: $color-dark-gray;
+            }
+        }
+    }
+    .btn-end {
+        button {
+            outline: none;
+            border: none;
+            font-size: $text-medium;
+            padding: 5px 20px;
+            border-radius: 10px;
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+            i {
+                color: $color-white;
+            }
+            &.btn-checkout {
+                background-color: $color-dark-gray;
+                color: $color-white;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    .wrap-total {
+        div {
+            font-size: $text-medium;
+            color: $color-dark;
+        }
+    }
+}

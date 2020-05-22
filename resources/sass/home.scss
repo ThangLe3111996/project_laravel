@@ -1,0 +1,72 @@
+@import 'common';
+
+#home {
+    background-color: $color-gray;
+    padding: 100px 0;
+    .container {
+        border-bottom: 1px solid $color-dark-gray;
+        border-top: 1px solid $color-dark-gray;
+        border-collapse: collapse;
+        padding: 0;
+        .categories {
+            margin-top: 50px;
+            a {
+                text-decoration: none;
+                color: $color-dark;
+                font-size: $text-large;
+                text-transform: capitalize;
+                &:hover {
+                    border-bottom: 1px solid $color-primary;
+                    color: $color-primary;
+                }
+            }
+        }
+        .wrap-view {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px 0;
+            a {
+                text-decoration: none;
+                .name-product {
+                    color: $color-dark;
+                    font-size: $text-icon;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+                div {
+                    display: flex;
+                    justify-content: center;
+                    .view-cart {
+                        border: 1px solid $color-dark-gray;
+                        width: 100%;
+                        padding: 15px 30px;
+                        color: $color-white;
+                        background-color: $color-dark-gray;
+                        font-size: $text-medium;
+                        letter-spacing: 3px;
+                        &:hover {
+                            background-color: $color-primary;
+                            border: 1px solid $color-primary;
+                            box-shadow: 2px 2px 8px 0 $color-dark-gray;
+                        }
+                    }
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+                    min-height: 300px;
+                    box-shadow: 2px 2px 8px 0 $color-dark-gray;
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}
+
+

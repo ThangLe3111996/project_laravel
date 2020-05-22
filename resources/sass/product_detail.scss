@@ -1,0 +1,48 @@
+@import 'common';
+#product_detail {
+    section {
+        background-color: $color-gray;
+        .wrap-product {
+            padding: 150px 0;
+            border-bottom: 1px solid $color-dark-gray;
+            .img-product {
+                width: 55%;
+                a {
+                    text-decoration: none;
+                }
+                .wrap-img {
+                    img {
+                        width: 60%;
+                        min-height: 200px;
+                        display: block;
+                        margin: auto;
+                        box-shadow: 2px 2px 8px 0 $color-dark-gray;
+                    }
+                }
+                .add-cart {
+                    border: 1px solid $color-dark-gray;
+                    width: 60%;
+                    color: #fff;
+                    padding: 15px 30px;
+                    background-color: $color-dark-gray;
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                }
+                &:hover .add-cart {
+                    background-color: $color-primary;
+                    border: 1px solid $color-primary;
+                    box-shadow: 2px 2px 8px 0 $color-dark-gray;
+                }
+            }
+            .content-product {
+                .infor {
+                    font-size: $text-medium;
+                    color: $color-dark;
+                    span {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

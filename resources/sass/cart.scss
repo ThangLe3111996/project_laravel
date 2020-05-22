@@ -1,0 +1,92 @@
+@import 'common';
+
+#list-cart {
+    padding: 100px 0;
+    background-color: $color-gray;
+    .table-cart {
+        width: 100%;
+        border: 1px solid $color-dark-gray;
+        tr {
+            padding: 50px 0;
+            td {
+                border-collapse: collapse;
+                color: $color-dark;
+                text-align: center;
+                font-size: $text-medium;
+                padding: 10px 0;
+                text-transform: capitalize;
+                .wrap-img {
+                    width: 50%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                button {
+                    outline: none;
+                    border: none;
+                    font-size: $text-medium;
+                    color: $color-white;
+                    padding: 5px 20px;
+                    border-radius: 10px;
+                    &.btn-remove {
+                        background-color: red;
+                    }
+                    &.btn-save {
+                        background-color: green;
+                    }
+                    i {
+                        color: $color-white;
+                    }
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+                input {
+                    width: 15%;
+                    text-align: center;
+                }
+                .btn-remove {
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+            .text-title {
+                font-size: 25px;
+                font-weight: 600;
+                border-bottom: 1px solid $color-dark-gray;
+            }
+            .text-price {
+                color: $color-dark-gray;
+            }
+        }
+    }
+    .btn-end {
+        button {
+            outline: none;
+            border: none;
+            font-size: $text-medium;
+            padding: 5px 20px;
+            border-radius: 10px;
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+            i {
+                color: $color-white;
+            }
+            &.btn-checkout {
+                background-color: $color-dark-gray;
+                color: $color-white;
+            }
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    .wrap-total {
+        div {
+            font-size: $text-medium;
+        }
+    }
+}
